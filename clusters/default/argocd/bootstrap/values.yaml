@@ -18,7 +18,7 @@ projects:
       notifications.argoproj.io/subscribe.on-sync-failed.slack: cluster-gitops
       notifications.argoproj.io/subscribe.on-health-degraded.slack: cluster-gitops
     description: Project for overall cluster configuration
-    namespace: openshift-gitops
+    namespace: argocd
     sourceRepos:
     - https://github.com/gnunn-gitops/cluster-config
     - https://github.com/redhat-cop/gitops-catalog

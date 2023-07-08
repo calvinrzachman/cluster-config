@@ -6,5 +6,5 @@ helmCharts:
   version: 0.2.5
   repo: https://gnunn-gitops.github.io/helm-charts
   valuesFile: values.yaml
-  namespace: openshift-gitops
+  namespace: argocd
   releaseName: argocd-app-of-app-0.2.5
