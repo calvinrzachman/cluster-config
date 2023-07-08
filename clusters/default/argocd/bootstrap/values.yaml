@@ -5,10 +5,10 @@ default:
     autoSyncPrune: false
     project: cluster-config
     destination:
-      namespace: openshift-gitops
+      namespace: argogcd
       server: https://kubernetes.default.svc
     source:
-      repoURL: https://github.com/gnunn-gitops/cluster-config.git
+      repoURL: https://github.com/calvinrzachman/cluster-config.git
       targetRevision: HEAD
 
 projects:
@@ -20,7 +20,7 @@ projects:
     description: Project for overall cluster configuration
     namespace: argocd
     sourceRepos:
-    - https://github.com/gnunn-gitops/cluster-config
+    - https://github.com/calvinrzachman/cluster-config
     - https://github.com/redhat-cop/gitops-catalog
     - https://github.com/gnunn1/gitops-catalog
     - https://github.com/gnunn-gitops/acm-hub-bootstrap
